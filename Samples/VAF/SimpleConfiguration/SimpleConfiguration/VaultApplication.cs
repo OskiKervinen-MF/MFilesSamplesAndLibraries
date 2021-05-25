@@ -14,7 +14,9 @@ namespace SimpleConfiguration
 		: ConfigurableVaultApplicationBase<MyConfiguration>
 	{
 
-		protected override void OnConfigurationUpdated(IConfigurationRequestContext context, ClientOperations clientOps, MyConfiguration oldConfiguration)
+		protected override void OnConfigurationUpdated(
+			MyConfiguration oldConfiguration,
+			bool bUpdateExternals )
 		{
 			SysUtils.ReportInfoToEventLog($"Updated (simple) configuration is:\r\n{this.Configuration}");
 		}
