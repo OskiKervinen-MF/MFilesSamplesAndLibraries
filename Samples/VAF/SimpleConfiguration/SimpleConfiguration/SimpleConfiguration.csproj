@@ -45,10 +45,11 @@
     <Reference Include="MFiles.VAF.Configuration, Version=21.5.10167.1, Culture=neutral, PublicKeyToken=3f736a53b2711c21, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\MFiles.VAF.Configuration.0.1.0-manual-topic-v-38530-update-vaf-usingcoreconfig-129826\lib\net45\MFiles.VAF.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\MFiles.VAF.2.1.0.15\lib\net45\Newtonsoft.Json.dll</HintPath>
     <Reference Include="MFiles.VAF.Configuration.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3f736a53b2711c21, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\MFiles.VAF.Configuration.0.1.0-manual-topic-v-38530-update-vaf-usingcoreconfig-129826\lib\net45\MFiles.VAF.Configuration.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -92,7 +93,7 @@
     <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.196\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.196\build\MSBuildTasks.targets'))" />
   </Target>
   <Import Project="..\packages\MSBuildTasks.1.5.0.196\build\MSBuildTasks.targets" Condition="Exists('..\packages\MSBuildTasks.1.5.0.196\build\MSBuildTasks.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
